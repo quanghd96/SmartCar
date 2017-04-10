@@ -101,21 +101,25 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
                 // for ActivityCompat#requestPermissions for more details.
                 return;
             }
-            mGoogleMap.setMyLocationEnabled(true);
-            LocationManager service = (LocationManager) getActivity().getSystemService(LOCATION_SERVICE);
-            Criteria criteria = new Criteria();
-            String provider = service.getBestProvider(criteria, false);
-            Location location = service.getLastKnownLocation(provider);
-            LatLng userLocation = new LatLng(location.getLatitude(), location.getLongitude());
-            mGoogleMap.addMarker(new MarkerOptions().position(userLocation));
-            mGoogleMap.clear();
-            mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, zoom));
-            mGoogleMap.setOnCameraMoveListener(new GoogleMap.OnCameraMoveListener() {
-                @Override
-                public void onCameraMove() {
-                    zoom = mGoogleMap.getCameraPosition().zoom;
-                }
-            });
+            try {
+                mGoogleMap.setMyLocationEnabled(true);
+                LocationManager service = (LocationManager) getActivity().getSystemService(LOCATION_SERVICE);
+                Criteria criteria = new Criteria();
+                String provider = service.getBestProvider(criteria, false);
+                Location location = service.getLastKnownLocation(provider);
+                LatLng userLocation = new LatLng(location.getLatitude(), location.getLongitude());
+                mGoogleMap.addMarker(new MarkerOptions().position(userLocation));
+                mGoogleMap.clear();
+                mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, zoom));
+                mGoogleMap.setOnCameraMoveListener(new GoogleMap.OnCameraMoveListener() {
+                    @Override
+                    public void onCameraMove() {
+                        zoom = mGoogleMap.getCameraPosition().zoom;
+                    }
+                });
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
             handler.postDelayed(this, 1000);
         }
     };

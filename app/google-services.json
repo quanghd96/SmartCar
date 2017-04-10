@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "334412511584",
+    "firebase_url": "https://tukyolympia.firebaseio.com",
+    "project_id": "tukyolympia",
+    "storage_bucket": "tukyolympia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334412511584:android:c83eb3efd2a80482",
+        "android_client_info": {
+          "package_name": "com.quang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334412511584-h2niois6q9q2nihiquurrkd42q6kjjsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA109yusbsCNF2pCCCjuyj3qIXENHdyGu8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334412511584:android:7289d9a379aff76a",
+        "android_client_info": {
+          "package_name": "com.quang.smartcar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334412511584-1eo71j1k1dul9kp6d8lltdeim0cl3ufc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quang.smartcar",
+            "certificate_hash": "2815076ea857c66bec91d7eb4da281ed259a7d81"
+          }
+        },
+        {
+          "client_id": "334412511584-h2niois6q9q2nihiquurrkd42q6kjjsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA109yusbsCNF2pCCCjuyj3qIXENHdyGu8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334412511584-h2niois6q9q2nihiquurrkd42q6kjjsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
