@@ -13,16 +13,28 @@
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nhịp tim: " />
+            android:padding="5dp"
+            android:src="@drawable/ic_heart_beat" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Nhịp tim: "
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewHeartBeat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="70" />
+            android:layout_gravity="center"
+            android:text="70"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -32,16 +44,27 @@
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_temperature" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nhiệt độ cơ thể: " />
+            android:layout_gravity="center"
+            android:text="Nhiệt độ cơ thể: "
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewTemperature"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="37" />
+            android:layout_gravity="center"
+            android:text="37"
+            android:textSize="20sp" />
     </LinearLayout>
 
 
@@ -51,33 +74,48 @@
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_alcohol" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nồng độ cồn: " />
+            android:layout_gravity="center"
+            android:text="Nồng độ cồn: "
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewAlcoholConcentration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0.25" />
+            android:layout_gravity="center"
+            android:text="0.25"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Đơn vị: mg/1 lít khí thở" />
+        android:text="Đơn vị: mg/1 lít khí thở"
+        android:textSize="18sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:text="Kết luận:" />
+        android:text="Kết luận:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewConclude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Các chỉ số bình thường. Bạn được phép lái xe." />
+        android:text="Các chỉ số bình thường. Bạn được phép lái xe."
+        android:textSize="20sp" />
 </LinearLayout>
