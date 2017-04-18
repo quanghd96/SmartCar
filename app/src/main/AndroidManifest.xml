@@ -44,6 +44,31 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
+        <activity
+            android:name=".acitivities.CopXeActivity"
+            android:label="Cốp xe" />
+        <activity
+            android:name=".acitivities.CuaXeActivity"
+            android:label="Cửa xe" />
+        <activity
+            android:name=".acitivities.DayAnToanActivity"
+            android:label="Dây an toàn" />
+        <activity
+            android:name=".acitivities.DenActivity"
+            android:label="Đèn" />
+        <activity
+            android:name=".acitivities.GheActivity"
+            android:label="Ghế" />
+        <activity
+            android:name=".acitivities.KinhActivity"
+            android:label="Kính" />
+        <activity
+            android:name=".acitivities.MediaActivity"
+            android:label="Media"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".acitivities.TocDoActivity"
+            android:label="Tốc độ" />
     </application>
 
 </manifest>

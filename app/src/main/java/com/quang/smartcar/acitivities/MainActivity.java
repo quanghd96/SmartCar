@@ -1,7 +1,6 @@
 package com.quang.smartcar.acitivities;
 
 import android.Manifest;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -18,6 +17,7 @@ import android.widget.Toast;
 
 import com.quang.smartcar.R;
 import com.quang.smartcar.fragments.DashBoardFragment;
+import com.quang.smartcar.fragments.HealthFragment;
 import com.quang.smartcar.fragments.HomeFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -43,7 +43,9 @@ public class MainActivity extends AppCompatActivity {
                     fragmentTransaction.commit();
                     return true;
                 case R.id.navigation_notifications:
-                    startActivity(new Intent(MainActivity.this, SettingsActivity.class));
+                    fragmentTransaction.replace(R.id.layout_content, new HealthFragment());
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
                     return true;
             }
             return false;
