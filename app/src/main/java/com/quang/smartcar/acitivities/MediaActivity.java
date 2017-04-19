@@ -7,6 +7,7 @@ import com.quang.smartcar.R;
 
 public class MediaActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -24,19 +24,19 @@ public class CuaXeActivity extends AppCompatActivity {
                 isBat = !isBat;
                 if (isBat) {
                     btnBatTat.setImageResource(R.drawable.on);
-                    tvBatTat.setText("Đã bật chức năng tự động mở cốp xe");
+                    tvBatTat.setText("Đã mở cửa xe");
                 } else {
                     btnBatTat.setImageResource(R.drawable.off);
-                    tvBatTat.setText("Đã tắt chức năng tự động mở cốp xe");
+                    tvBatTat.setText("Đã đóng cửa xe");
                 }
             }
         });
         if (isBat) {
             btnBatTat.setImageResource(R.drawable.on);
-            tvBatTat.setText("Đã bật chức năng tự động mở cốp xe");
+            tvBatTat.setText("Đã mở cửa xe");
         } else {
             btnBatTat.setImageResource(R.drawable.off);
-            tvBatTat.setText("Đã tắt chức năng tự động mở cốp xe");
+            tvBatTat.setText("Đã đóng cửa xe");
         }
     }
 

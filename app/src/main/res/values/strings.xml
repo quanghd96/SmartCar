@@ -79,4 +79,6 @@
         <item>Số 3</item>
         <item>Số 4</item>
     </string-array>
+    <string name="speech_prompt">Xin mời nói!</string>
+    <string name="speech_not_supported">Xin lỗi thiết bị của bạn không hỗ trợ!</string>
 </resources>

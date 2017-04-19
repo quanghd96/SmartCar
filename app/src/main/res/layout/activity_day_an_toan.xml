@@ -22,6 +22,7 @@
             android:textStyle="bold" />
 
         <Spinner
+            android:id="@+id/spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -48,6 +49,7 @@
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/imageViewSpeak"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
@@ -55,4 +57,11 @@
         android:layout_gravity="center"
         android:layout_marginBottom="50dp"
         app:srcCompat="@drawable/ic_mic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="VD: Mở khóa cửa dây an toàn số x\n Khóa dây an toàn số x" />
 </RelativeLayout>
